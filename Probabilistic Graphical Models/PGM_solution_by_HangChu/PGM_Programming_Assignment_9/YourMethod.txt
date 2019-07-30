@@ -1,0 +1,6 @@
+Describe your method used to recognize the unknown actions here.
+
+
+My method: turn posedata into N*30 matrix and cluster it using k-means. Calculate mean and covariance of each cluster, and get initialClassProb using function mvnpdf. Calculate initialPairProb using products of initialClassProb.
+
+However, this yeilds to a result evaluated as score 9.33. Even less than making no changes, which is evaluated as score 12.89. So I give up digging deeper and compromise to the fairish grade...
